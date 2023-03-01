@@ -13,3 +13,11 @@ ActiveModel::UnknownAttributeError: unknown attribute 'password_confirmation' fo
           ^^^^^
     test/models/user_test.rb:6:in `setup'
 ```
+
+```
+rails g migration AddPasswordconfirmationToUsers password_confirmation:string
+```
+
+```
+rails db:migrate
+```
